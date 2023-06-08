@@ -5,6 +5,8 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 st.write("""
 # CANCERVIVE: Cancer Survival Prediction
 This app predicts the **cancer patients' survival**!
@@ -63,7 +65,6 @@ def user_input_features():
 input_features = user_input_features()
 
 # Load the Cancer survival dataset from CSV
-
 url = 'https://raw.githubusercontent.com/sarah-liya/survival-web/main/FYP%20Cancer%20Survival%20new.csv'
 cancerS_df = pd.read_csv(url, low_memory=False)
 
@@ -86,9 +87,6 @@ dtree = DecisionTreeRegressor()
 dtree.fit(X_train, y_train)
 
 if input_features is not None:
-    # Display the input features
-    st.write('### Input Features')
-    st.write(input_features)
 
     # Add a button to trigger the prediction
     if st.button('Predict Cancer Survival'):
@@ -96,8 +94,9 @@ if input_features is not None:
         prediction = dtree.predict(input_features)[0]
 
         # Display the prediction
-        st.write('### Prediction')
-        st.write(prediction)
+        st.write('### Patients Survival Rate Prediction')
+        st.write(f'{prediction:.2f}%')
+
 
 
         # Extract the attribute weights (feature importances)
