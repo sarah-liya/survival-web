@@ -110,8 +110,8 @@ if input_features is not None:
         filtered_attribute_weights_df = attribute_weights_df[attribute_weights_df['Attribute'].isin(selected_attributes)]
         
         # Display the attribute weights
-        st.write('### Attribute Weights')
-        st.write(filtered_attribute_weights_df)
+        st.write('### Importants of Factors for Prediction')
+        
         
         # Plot the attribute weights
         plt.figure(figsize=(10, 6))
