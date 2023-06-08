@@ -22,7 +22,6 @@ def user_input_features():
         "Oesophagus"
     ]
     genders = [
-        "Persons",
         "Female",
         "Male"
     ]
@@ -35,7 +34,6 @@ def user_input_features():
         "All ages"
     ]
     stages = [
-        "All stages combined",
         "1",
         "2",
         "3",
