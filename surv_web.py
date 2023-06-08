@@ -7,8 +7,9 @@ from sklearn.preprocessing import LabelEncoder
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
+st.title('CANCERVIVE: Cancer Survival Prediction')
+
 st.write("""
-# CANCERVIVE: Cancer Survival Prediction
 This app predicts the **cancer patients' survival**!
 """)
 
