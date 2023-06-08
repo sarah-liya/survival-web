@@ -10,7 +10,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 st.write("""
 # CANCERVIVE: Cancer Survival Prediction
 This app predicts the **cancer patients' survival**!
-"")
+""")
 
 def user_input_features():
     cancer_types = [
