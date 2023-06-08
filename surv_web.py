@@ -112,16 +112,14 @@ if input_features is not None:
         st.write('### Attribute Weights')
         st.write(filtered_attribute_weights_df)
         
-        
-        # Plot the attribute weights with reduced size
-        plt.figure(figsize=(6, 6))  # Adjust the figure size as desired
+        # Plot the attribute weights
+        plt.figure(figsize=(10, 6))
         plt.bar(filtered_attribute_weights_df['Attribute'], filtered_attribute_weights_df['Weight'])
+        plt.xticks(rotation=90)
         plt.xlabel('Attribute')
         plt.ylabel('Weight')
         plt.title('Attribute Weights')
-        plt.xticks(rotation=90)
         st.pyplot(plt)
-
 
 
 
