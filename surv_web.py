@@ -63,7 +63,9 @@ def user_input_features():
 input_features = user_input_features()
 
 # Load the Cancer survival dataset from CSV
-cancerS_df = pd.read_csv('C:/Users/Admin/anaconda3/FYP Cancer Survival new.csv', low_memory=False)
+
+url = 'https://raw.githubusercontent.com/sarah-liya/survival-web/main/FYP%20Cancer%20Survival%20new.csv'
+cancerS_df = pd.read_csv(url, low_memory=False)
 
 # Encode the categorical features in the original dataset
 encode = ['Cancer type', 'Gender', 'Stage', 'Age At Diagnosis']
