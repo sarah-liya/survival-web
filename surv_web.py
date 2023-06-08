@@ -114,7 +114,7 @@ if input_features is not None:
 
 
         # Plot the attribute weights
-        plt.figure(figsize=(10, 6))
+        plt.figure(figsize=(5, 3))
         plt.bar(filtered_attribute_weights_df['Attribute'], filtered_attribute_weights_df['Weight'])
         plt.xticks(rotation=90)
         plt.xlabel('Attribute')
