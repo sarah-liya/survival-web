@@ -94,7 +94,7 @@ if input_features is not None:
 
         # Display the prediction
         st.write('### Patients Survival Rate Prediction')
-        st.write(f'{prediction:.2f}%')
+        st.title(f'{prediction:.2f}%')
 
 
 
