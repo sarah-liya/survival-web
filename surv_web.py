@@ -9,10 +9,6 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.header('CANCERVIVE: Cancer Survival Prediction')
 
-st.write("""
-This app predicts the **cancer patients' survival**!
-""")
-
 def user_input_features():
     cancer_types = [
         "Liver",
