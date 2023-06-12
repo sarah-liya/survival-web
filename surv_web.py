@@ -107,7 +107,7 @@ if input_features is not None:
         plt.figure(figsize=(10, 6))
         plt.bar(filtered_attribute_weights_df['Attribute'], filtered_attribute_weights_df['Weight'])
         plt.xlabel('Factor')
-        plt.ylabel('Factor importance')
+        plt.ylabel('Factor weight')
         plt.title('Importance factor')
         plt.xticks(rotation=45)
         st.pyplot(plt)
