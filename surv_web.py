@@ -103,6 +103,20 @@ if input_features is not None:
         selected_attributes = input_features.columns
         filtered_attribute_weights_df = attribute_weights_df[attribute_weights_df['Attribute'].isin(selected_attributes)]
         
+        
+        # Display the attribute weights
+        st.write('### Importance factor')
+        st.dataframe(filtered_attribute_weights_df)
+
+        # Plot the attribute weights
+        plt.figure(figsize=(10, 6))
+        plt.bar(filtered_attribute_weights_df['Attribute'], filtered_attribute_weights_df['Weight'])
+        plt.xlabel('Factor')
+        plt.ylabel('Factor importance')
+        plt.title('Feature Importances')
+        plt.xticks(rotation=45)
+        st.pyplot(plt)
+        
 
 
 
