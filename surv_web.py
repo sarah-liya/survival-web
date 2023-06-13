@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-st.header('CANCERVIVE: Cancer Survival Prediction')
+st.header('CANCERVIVE: Cancer Survival Rate Prediction')
 
 def user_input_features():
     cancer_types = [
