@@ -15,7 +15,9 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
-st.header('CANCERVIVE: Cancer Survival Rate Prediction')
+st.header('CANCERVIVE: Cancer Survival Rate Prediction System')
+
+st.write('Disclaimer: The prediction results is based on Machine Learning Data')
 
 def user_input_features():
     cancer_types = [
